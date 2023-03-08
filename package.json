@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/ootidea/solid-signal-object/issues"
   },
-  "homepage": "https://github.com/ootidea/solid-signal-object#readme"
+  "homepage": "https://github.com/ootidea/solid-signal-object#readme",
+  "volta": {
+    "node": "18.14.2"
+  }
 }
