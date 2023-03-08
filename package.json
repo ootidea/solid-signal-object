@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Preact-style Signal for SolidJS",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "vite build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ootidea/solid-signal-object.git"
