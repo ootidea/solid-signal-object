@@ -12,7 +12,12 @@
   },
   "license": "CC0-1.0",
   "author": "ootidea",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "format": "run-p format:*",
