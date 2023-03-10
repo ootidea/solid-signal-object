@@ -1,6 +1,6 @@
 {
   "name": "solid-signal-object",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Preact-style Signal for SolidJS",
   "homepage": "https://github.com/ootidea/solid-signal-object#readme",
   "bugs": {
