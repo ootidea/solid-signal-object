@@ -1,5 +1,4 @@
-import { Accessor, createSignal, Setter, Signal } from 'solid-js'
-import { SignalOptions } from 'solid-js/types/reactive/signal'
+import { Accessor, createSignal, Setter, Signal, SignalOptions } from 'solid-js'
 
 export class SignalObject<T> {
   readonly get: Accessor<T>
@@ -27,6 +26,8 @@ export class SignalObject<T> {
   }
 }
 
-export function createSignalObject<T>(value: T, options?: SignalOptions<T>): SignalObject<T> {
-  return new SignalObject<T>(createSignal(value, options))
+export function createSignalObject<T>(): SignalObject<T | undefined>
+export function createSignalObject<T>(value: T, options?: SignalOptions<T>): SignalObject<T>
+export function createSignalObject<T>(value?: T, options?: SignalOptions<T | undefined>) {
+  return new SignalObject(createSignal(value, options))
 }
