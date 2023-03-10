@@ -1,16 +1,11 @@
 {
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "strict": true,
-    "noImplicitReturns": true,
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
+    "importsNotUsedAsValues": "remove"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
