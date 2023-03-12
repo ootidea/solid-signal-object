@@ -1,6 +1,6 @@
 {
   "name": "solid-signal-object",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Provide thin wrappers for SolidJS createSignal and Signal<T>",
   "homepage": "https://github.com/ootidea/solid-signal-object#readme",
   "bugs": {
