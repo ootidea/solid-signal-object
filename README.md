@@ -23,7 +23,7 @@ if (text.value !== undefined) {
 }
 ```
 
-## Definition of SignalObject<T>
+## Definition of `SignalObject<T>`
 
 ```typescript
 export class SignalObject<T> {
