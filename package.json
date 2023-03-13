@@ -1,7 +1,12 @@
 {
   "name": "solid-signal-object",
-  "version": "1.0.0",
-  "description": "Provide thin wrappers for SolidJS createSignal and Signal<T>",
+  "version": "1.0.1",
+  "description": "A thin wrapper library for SolidJS signals, which can solve a issue related to narrowing.",
+  "keywords": [
+    "solidjs",
+    "signals",
+    "state management"
+  ],
   "homepage": "https://github.com/ootidea/solid-signal-object#readme",
   "bugs": {
     "url": "https://github.com/ootidea/solid-signal-object/issues"
