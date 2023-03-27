@@ -1,6 +1,7 @@
 # solid-signal-object
 
-This package exports `createSignalObject` function and `SignalObject<T>` type, which can avoid a [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) issue of SolidJS `Signal<T>`.
+This package provides `createSignalObject` function and `SignalObject<T>` type, which can avoid a [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) issue of SolidJS's built-in Signal.  
+It also offers `createMemoObject` and `AccessorObject<T>` in a similar manner.  
 
 ## Example
 
