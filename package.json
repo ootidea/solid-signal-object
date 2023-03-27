@@ -1,6 +1,6 @@
 {
   "name": "solid-signal-object",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A thin wrapper library for SolidJS signals, which can solve a issue related to narrowing.",
   "keywords": [
     "solidjs",
