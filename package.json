@@ -4,8 +4,9 @@
   "description": "A thin wrapper library for SolidJS signals, which can solve a issue related to narrowing.",
   "keywords": [
     "solidjs",
+    "solid-js",
     "signals",
-    "state management"
+    "state-management"
   ],
   "homepage": "https://github.com/ootidea/solid-signal-object#readme",
   "bugs": {
