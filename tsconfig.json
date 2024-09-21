@@ -1,12 +1,10 @@
 {
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "moduleResolution": "node",
-    "importsNotUsedAsValues": "remove"
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noErrorTruncation": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }
