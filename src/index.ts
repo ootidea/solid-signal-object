@@ -1,12 +1,13 @@
 import {
-  type Accessor, createMemo,
-  createSignal,
+  type Accessor,
   type EffectFunction,
   type MemoOptions,
   type Setter,
   type Signal,
-  type SignalOptions
-} from "solid-js";
+  type SignalOptions,
+  createMemo,
+  createSignal,
+} from 'solid-js'
 
 export class SignalObject<T> {
   readonly get: Accessor<T>
