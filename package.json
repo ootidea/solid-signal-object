@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/ootidea/solid-signal-object/issues"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ootidea/solid-signal-object.git"
@@ -26,19 +27,21 @@
   ],
   "scripts": {
     "build": "vite build",
-    "format": "run-p format:*",
-    "format:prettier": "prettier -w \"src/**/*.{js,ts}\"",
-    "format:package-json": "sort-package-json",
+    "fix": "run-p \"fix:*\"",
+    "fix:biome": "biome check --write",
+    "fix:package-json": "sort-package-json",
+    "check": "run-p \"check:*\"",
+    "check:type": "tsc --noEmit",
+    "check:biome": "biome check",
     "postversion": "git push && git push --tags && npm publish ./",
-    "prepublishOnly": "npm run build",
-    "typecheck": "tsc --noEmit"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
     "@tsconfig/strictest": "^1.0.2",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.4",
+    "npm-run-all2": "^6.2.3",
     "solid-js": "^1.6.12",
-    "sort-package-json": "^2.4.1",
+    "sort-package-json": "^2.10.1",
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
     "vite-plugin-dts": "^2.1.0"

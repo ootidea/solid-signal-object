@@ -1,14 +1,12 @@
 import {
-  Accessor,
-  createMemo,
+  type Accessor, createMemo,
   createSignal,
-  EffectFunction,
-  MemoOptions,
-  NoInfer,
-  Setter,
-  Signal,
-  SignalOptions,
-} from 'solid-js'
+  type EffectFunction,
+  type MemoOptions,
+  type Setter,
+  type Signal,
+  type SignalOptions
+} from "solid-js";
 
 export class SignalObject<T> {
   readonly get: Accessor<T>
@@ -55,12 +53,12 @@ export class AccessorObject<T> {
 }
 
 export function createMemoObject<Next extends Prev, Prev = Next>(
-  fn: EffectFunction<undefined | NoInfer<Prev>, Next>
+  fn: EffectFunction<undefined | NoInfer<Prev>, Next>,
 ): AccessorObject<Next>
 export function createMemoObject<Next extends Prev, Init = Next, Prev = Next>(
   fn: EffectFunction<Init | Prev, Next>,
   value: Init,
-  options?: MemoOptions<Next>
+  options?: MemoOptions<Next>,
 ): AccessorObject<Next>
 export function createMemoObject(fn: any, value?: any, option?: any) {
   return new AccessorObject(createMemo(fn, value, option))
